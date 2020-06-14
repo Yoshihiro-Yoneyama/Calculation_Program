@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--入力値表示-->
+    <TextView
+        android:id="@+id/cul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:layout_marginBottom="5dp"
+        android:text="0"/>
+
+    <!--1行目-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--Cボタン-->
+        <Button
+            android:id="@+id/bt_C"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="C"
+            android:textSize="30dp" />
+
+        <!--「÷」ボタン-->
+        <Button
+            android:id="@+id/bt_div"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="÷"
+            android:textSize="30dp"/>
+
+        <!--「×」ボタン-->
+        <Button
+            android:id="@+id/bt_mul"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="×"
+            android:textSize="30dp" />
+
+        <!--「-」ボタン-->
+        <Button
+            android:id="@+id/bt_minus"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="－"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <!--2行目-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--「7」ボタン-->
+        <Button
+            android:id="@+id/bt_7"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="7"
+            android:textSize="30dp" />
+
+        <!--「8」ボタン-->
+        <Button
+            android:id="@+id/bt_8"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="8"
+            android:textSize="30dp" />
+
+        <!--「9」ボタン-->
+        <Button
+            android:id="@+id/bt_9"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="9"
+            android:textSize="30dp" />
+
+        <!--「＋」ボタン-->
+        <Button
+            android:id="@+id/bt_plus"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="＋"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <!--3行目-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--「4」ボタン-->
+        <Button
+            android:id="@+id/bt_4"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="4"
+            android:textSize="30dp" />
+
+        <!--「5」ボタン-->
+        <Button
+            android:id="@+id/bt_5"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="5"
+            android:textSize="30dp" />
+
+        <!--「6」ボタン-->
+        <Button
+            android:id="@+id/bt_6"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="6"
+            android:textSize="30dp" />
+
+        <!--「=」ボタン-->
+        <Button
+            android:id="@+id/bt_equal"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="="
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <!--4行目-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--「1」ボタン-->
+        <Button
+            android:id="@+id/bt_1"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="1"
+            android:textSize="30dp" />
+
+        <!--「2」ボタン-->
+        <Button
+            android:id="@+id/bt_2"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="2"
+            android:textSize="30dp" />
+
+        <!--「3」ボタン-->
+        <Button
+            android:id="@+id/bt_3"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="3"
+            android:textSize="30dp" />
+
+        <!--「.」ボタン-->
+        <Button
+            android:id="@+id/bt_dot"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="."
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <!--5行目（予備）-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--「0」ボタン-->
+        <Button
+            android:id="@+id/bt_0"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="0"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
